@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700|Material+Icons");
+body {
+  background-color: #f0f0f0;
+  font-family: "Google Sans", "Roboto", "San Francisco", "Segoe UI", Helvetica, Arial, sans-serif;
+  color: #111;
+  overflow-x: hidden;
+}
+
+.p404 {
+  overflow: hidden;
+}
+.p404 h1 {
+  font-size: 3em;
+  position: absolute;
+  left: 8vw;
+  top: 10vh;
+  font-weight: bold;
+  z-index: 100;
+}
+.p404 div {
+  z-index: 2;
+}
+.p404 div#f {
+  top: 8vh;
+  position: absolute;
+  right: 0;
+}
+.p404 div img.e4-1 {
+  width: 15vw;
+  margin-bottom: 4vh;
+}
+.p404 div img.e0 {
+  width: 15vw;
+  margin-bottom: 12vh;
+  margin-left: -4vw;
+}
+.p404 div img.e4-2 {
+  width: 15vw;
+  margin-left: -2vw;
+}
+.p404 div img.eIcosa {
+  height: 80vh;
+  position: absolute;
+  left: -18vw;
+}
+.p404 div img.eCone {
+  top: 33vh;
+  height: 50vh;
+  transform: rotate(30deg);
+  position: absolute;
+  right: 25vw;
+}
+.p404 div img.eDisc {
+  top: 50vh;
+  width: 40vw;
+  transform: rotate(-3deg);
+  position: absolute;
+  right: 40vw;
+}
+
+nav {
+  color: #eee;
+  z-index: 1000;
+  background: #111;
+  height: 50px;
+  width: 100vw;
+  position: fixed;
+  padding: 3px 8vw;
+  display: grid;
+  place-items: center start;
+  grid-auto-flow: column;
+  transition: background ease-out 0.2s;
+}
+nav .links {
+  width: 100%;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr min-content;
+}
+nav .links * {
+  padding: 1px 10px;
+}
+nav .links * * {
+  text-align: right;
+  color: inherit;
+  text-decoration: none;
+  float: right;
+}
+nav .links * *:hover {
+  cursor: pointer;
+}
+nav .links * *:visited {
+  color: inherit;
+}
+nav > div a img {
+  height: 25px;
+}
+nav:hover {
+  background: #0f0f0f;
+}
+nav.landing {
+  background: rgba(0, 0, 0, 0.1);
+  transition: background ease 0.3s;
+}
+nav.landing:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+header {
+  user-select: none;
+}
+header img {
+  width: 100vw;
+  z-index: 50;
+}
+header div {
+  z-index: 500;
+  position: absolute;
+  left: 53vw;
+  color: #eee;
+  top: 20vh;
+}
+header div button {
+  margin-left: 15vw;
+}
+
+main {
+  position: absolute;
+  font-size: 17pt;
+  top: 50px;
+  width: 100vw;
+}
+
+.centeredLayout {
+  display: grid;
+  grid-template: 100%/1fr 3fr 1fr;
+}
+
+.Popup {
+  position: fixed;
+  background-color: #fcfcfc;
+  border-radius: 15px;
+  border: #c4c4c4 solid 1px;
+  padding: 22px;
+  margin: 13px;
+  box-shadow: 0 0 10px 2px #b9b9b9;
+  min-width: 18%;
+  float: right;
+}
+.Popup p {
+  font-size: 15pt;
+}
+.Popup button {
+  margin: 3px;
+}
+
+.cookieP {
+  width: 100vw;
+  height: 90px;
+  font-size: 15pt;
+  position: fixed;
+  bottom: 0;
+  display: grid;
+  place-items: center;
+  grid-template: 100%/1fr auto;
+}
+.cookieP div {
+  background-color: #eee;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  bottom: 0;
+  padding: 23px;
+}

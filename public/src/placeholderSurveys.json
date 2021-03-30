@@ -1,0 +1,9 @@
+[{
+    "title": "S1",
+    "description": "A placeholder survey",
+    "questions":[{
+        "name":"Can you answer ?",
+        "type":"radio",
+        "choices":["Yes","No"]
+    }]
+}]
