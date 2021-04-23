@@ -1,81 +1,17 @@
-@import url('https://fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700|Material+Icons');
-
-
-
-
 body {
     background-color: #f0f0f0;
-    font-family: 'Google Sans', 'Roboto', "San Francisco",
+    font-family: system-ui, 'Google Sans', 'Roboto', "San Francisco",
         "Segoe UI",
         Helvetica,
         Arial,
         sans-serif;
     color: #111;
+
     overflow-x: hidden;
 
 }
 
-.p404 {
-    overflow: hidden;
 
-    h1 {
-        font-size: 3em;
-        position: absolute;
-        left: 8vw;
-        top: 10vh;
-        font-weight: bold;
-        z-index: 100;
-    }
-
-    div {
-        z-index: 2;
-
-        &#f {
-            top: 8vh;
-            position: absolute;
-            right: 0;
-        }
-
-        img.e4-1 {
-            width: 15vw;
-            margin-bottom: 4vh;
-        }
-
-        img.e0 {
-            width: 15vw;
-            margin-bottom: 12vh;
-            margin-left: -4vw;
-        }
-
-        img.e4-2 {
-            width: 15vw;
-            margin-left: -2vw;
-        }
-
-        img.eIcosa {
-            height: 80vh;
-            position: absolute;
-            left: -18vw;
-
-        }
-
-        img.eCone {
-            top: 33vh;
-            height: 50vh;
-            transform: rotate(30deg);
-            position: absolute;
-            right: 25vw;
-        }
-
-        img.eDisc {
-            top: 50vh;
-            width: 40vw;
-            transform: rotate(-3deg);
-            position: absolute;
-            right: 40vw;
-        }
-    }
-}
 
 nav {
     color: #eee;
@@ -162,14 +98,14 @@ header {
 
 main {
     position: absolute;
-    font-size: 17pt;
+    //font-size: 17pt;
     top: 50px;
     width: 100vw;
 }
 
 .centeredLayout {
     display: grid;
-    grid-template: 100% / 1fr 3fr 1fr;
+    grid-template: 100% / 0.6fr 3fr 1fr;
 
 }
 
@@ -178,20 +114,14 @@ main {
     background-color: #fcfcfc;
     border-radius: 15px;
     border: rgb(196, 196, 196) solid 1px;
-    padding: 22px;
-    margin: 13px;
+    //padding: 22px;
+    margin: 2rem;
     box-shadow: 0 0 10px 2px rgb(185, 185, 185);
     min-width: 18%;
-    float: right;
-
-    p {
-        font-size: 15pt;
-    }
-
-    button {
-        margin: 3px;
-    }
+    right: 0;
+    max-width: 23rem;
 }
+
 
 .cookieP {
     width: 100vw;
@@ -201,7 +131,7 @@ main {
     position: fixed;
     bottom: 0;
     display: grid;
-    place-items: center;
+    place-items: end center;
     grid-template: 100% / 1fr auto;
 
     div {
@@ -210,5 +140,36 @@ main {
         border-top-right-radius: 9px;
         bottom: 0;
         padding: 23px;
+
+    }
+}
+
+.vSep {
+    height: 65%;
+    width: 1px;
+    background: rgb(110, 110, 110);
+    margin: auto;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.connectMainDiv {
+    .card {
+        padding-top: 4vh;
+        padding-bottom: 4vh;
+    }
+
+    form {
+        width: 80%;
+
+        input {
+
+            margin: 3vh;
+            margin-left: 0;
+
+            &#Rpassword {
+                margin-bottom: 0;
+            }
+        }
     }
 }
