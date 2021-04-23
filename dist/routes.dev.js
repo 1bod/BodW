@@ -32,13 +32,14 @@ app.get("/", function (req, res) {
 }).get("/playground/", function (req, res) {
   console.log(res.statusCode);
   res.sendFile(__dirname + '/public/playground');
-}).get("/login/", function (req, res) {
+});
+app.get("/login/", function (req, res) {
   console.log(res.statusCode);
   res.sendFile(__dirname + '/public/auth/login.html');
 }).get("/cat/", function (req, res) {
-  res.redirect("https://www.twitch.tv/imcatjam");
+  res.send("<script>window.location='https://www.twitch.tv/imcatjam';</script>");
 }).get("/discord/", function (req, res) {
-  res.redirect("https://discord.gg/6SS95tb7v4");
+  res.send("<script>window.location='https://discord.gg/6SS95tb7v4';</script>");
 }); // I stole this
 
 function render404(req, res) {
